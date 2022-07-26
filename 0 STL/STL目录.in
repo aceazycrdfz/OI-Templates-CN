@@ -1,0 +1,32 @@
+1 vector 不定长数组
+
+2 deque 双端数组
+
+3 list 双向队列
+
+4 stack 栈
+
+5 queue 队列
+
+6 priority_queue 优先队列
+
+7 set 集合
+
+8 multiset
+
+9 unordered_set
+
+10 unordered_multiset
+
+11 map 映射
+
+=============================
+1 pair
+2 sort
+5 string tolower??
+? set等直接像这样{1,2}赋值
+
+?reverse
+?rotate
+bitset
+struct重载运算符
