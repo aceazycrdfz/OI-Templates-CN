@@ -20,7 +20,7 @@ void toList(int upb){
 }
 void printB(int upb){
     int i;
-    fout<<"vector<int> isP={";
+    fout<<"vector<bool> isP={";
     for(i=0;i<=upb;i++){
         if(i>0) fout<<',';
         fout<<isP[i];
@@ -29,7 +29,7 @@ void printB(int upb){
 }
 void printL(int upb){
     int i;
-    fout<<"vector<bool> plist={";
+    fout<<"vector<int> plist={";
     for(i=0;i<plist.size();i++){
         if(plist[i]>upb) break;
         if(i>0) fout<<',';

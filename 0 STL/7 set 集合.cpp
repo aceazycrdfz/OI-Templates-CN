@@ -52,13 +52,14 @@ int main(){
     //it--;
     
     
-    
-    //也可以像priority_queue一样定义顺序
-    //默认等于这样(大数优先)
+    //默认等于这样，从小到大
     //set<double,less<double> > a;
-    //反过来(小数优先)
+    //反过来，从大到小
     //set<double,greater<double> > a;
-    //换言之，lower_bound和upper_bound是找优先级大于(等于)x中优先度最低的
+    //换言之，lower_bound和upper_bound是找大于(等于)x中最小的
+    
+    //也可以自定义比较方法，参考自定义比较方法目录
+    //互不小于的元素会被判定为相同
     
     
     

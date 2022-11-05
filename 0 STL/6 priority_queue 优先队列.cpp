@@ -4,7 +4,7 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
     
-    //定义T priority_queue 
+    //定义T priority_queue
     //priority_queue<T> a;
     
     //返回a的大小
@@ -32,6 +32,8 @@ int main(){
     //priority_queue<int,vector<int>,greater<int> > a;
     
     //如果是pair，默认先比第一个，相等则比第二个
+    
+    //也可以自定义比较方法，参考自定义比较方法目录
     
     
     

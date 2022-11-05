@@ -16,7 +16,7 @@ int main(){
     //队尾加个元素x，size加1
     //void a.push(T x);
     
-    //删除队尾元素，size减1
+    //删除队首元素，size减1
     //void a.pop();
     
     //查询队首元素
