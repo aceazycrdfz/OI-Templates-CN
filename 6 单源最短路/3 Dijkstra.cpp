@@ -19,7 +19,7 @@ private:
     
 public:
     Dijkstra(int Nsize,int Esize):
-        N(Nsize),M(0),n(Nsize+1),e(Esize+1),
+        N(Nsize),M(0),n(N+1),e(Esize+1),
         dis(N+1,-1),prev(N+1),
         F(N){}
     void AddEdge(int u,int v,T len){
@@ -66,6 +66,8 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
     
+    //需要PQFrontier class 
+    
     //初始化一个有N个点和M条边的图，T是int、double等(边长的类)
     //M可以过大，不能过小
     //Dijkstra<T> G(int N,int M);
@@ -80,7 +82,7 @@ int main(){
     //void G.RunSSSP(int start);
     
     //询问起点是否能到达id号点
-    //bool G.Reachable(id);
+    //bool G.Reachable(int id);
     
     //询问起点到id号点的最短路长
     //要求起点能到达id号点

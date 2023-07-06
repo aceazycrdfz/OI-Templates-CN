@@ -10,13 +10,13 @@ int main(){
     //预定大小len
     //deque<T> a(int len);
     
-    //初始化值 
+    //初始化值
     //deque<T> a{1,2,3,4};
     
-    //初始时复制另一个deque b的值过来 
+    //初始时复制另一个deque b的值过来
     //deque<T> a(b);
     
-    //复制另一个deque b的值过来 
+    //复制另一个deque b的值过来
     //a=b;
     
     //可以random access
@@ -51,6 +51,7 @@ int main(){
     
     //清空
     //void a.clear();
+    
     
     
     system("pause");

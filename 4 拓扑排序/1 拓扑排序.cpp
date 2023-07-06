@@ -3,11 +3,11 @@ using namespace std;
 class TopoSort{
 private:
     struct EDGE{
-        long long v;
+        int v;
         EDGE *nex;
     };
     struct NODE{
-        long long mark;
+        int mark;
         EDGE *fir;
     };
     int N,M;
@@ -45,7 +45,6 @@ public:
         for(i=1;i<=N;i++) n[i].mark=0;
         ans.clear();
         for(i=1;i<=N;i++) DFS(i);
-        ans.push_back(0);
         reverse(ans.begin(),ans.end());
     }
     bool isDAG(){
@@ -77,7 +76,7 @@ int main(){
     //返回一个拓扑排序
     //要求是有向无环图
     //vector<int> a.Result();
-    //返回数组第一个数下标是1
+    //返回数组下标从0开始 
     
     
     

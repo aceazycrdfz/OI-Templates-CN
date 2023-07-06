@@ -3,7 +3,7 @@ using namespace std;
 template<typename T> class SPFA{
 private:
     struct EDGE{
-        long long v;
+        int v;
         T len;
         EDGE *nex;
     };
@@ -40,7 +40,7 @@ private:
     
 public:
     SPFA(int Nsize,int Esize):
-        N(Nsize),M(0),n(Nsize+1),e(Esize+1),
+        N(Nsize),M(0),n(N+1),e(Esize+1),
         dis(N+1),reached(N+1),prev(N+1),
         inQ(N+1),inQcnt(N+1){}
     void AddEdge(int u,int v,T len){
@@ -118,19 +118,20 @@ int main(){
     //void G.RunSSSP(int start); 
     
     //询问起点是否能进入负权回路
+    //只有此结果为false以下其它询问结果才有意义
     //bool G.NegCycle();
     
-    //询问起点是否能到达id号点 
-    //bool G.Reachable(id);
+    //询问起点是否能到达id号点
+    //bool G.Reachable(int id);
     
     //询问起点到id号点的最短路长
     //要求起点不能进入负权回路且能到达id号点
     //T G.DisTo(int id);
      
-    //返回一个从起点到id号点的最短路径 
+    //返回一个从起点到id号点的最短路径
     //要求起点不能进入负权回路且能到达id号点
     //vector<int> G.PathTo(int id);
-    //返回数组第一个数(下标0)是start，最后一个是id 
+    //返回数组第一个数(下标0)是start，最后一个是id
     
     
     

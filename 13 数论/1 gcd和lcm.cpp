@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 long long gcd(long long x,long long y){
-    if(x%y==0) return y;
-    return gcd(y,x%y);
+    long long z=x%y;
+    if(z==0) return y;
+    return gcd(y,z);
 }
 long long lcm(long long x,long long y){
     return x*y/gcd(x,y);

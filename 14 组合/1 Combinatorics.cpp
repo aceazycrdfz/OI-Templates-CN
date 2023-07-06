@@ -59,7 +59,7 @@ int main(){
     //计算x^y
     //long long c.exp(long long x,long long y);
     
-    //计算x的倒数multiplicative inverse
+    //计算x的乘法逆元multiplicative inverse
     //long long c.inv(long long x);
     
     //计算x的阶乘: x!
@@ -69,7 +69,7 @@ int main(){
     //long long c.binom(long long n,long long k);
     
     //计算x的subfactorial: !x
-    //!x表示有多少个1到x的排列使得每个数都不在自己的原位上 
+    //!x表示有多少个1到x的排列使得每个数都不在自己的原位上
     //long long c.subfact(long long x);
     
     //计算第x个卡特兰数
